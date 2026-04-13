@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Form Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .radio-group {
+            margin: 10px 0 15px;
+        }
+
+        .radio-group label {
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0984e3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0652dd;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #0984e3;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
+<div class="container">
+    <h3>Form Input Mahasiswa</h3>
+
+    <form action="/simpan" method="post">
+
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>NIM:</label>
+        <input type="text" name="nim" required>
+
+        <label>Jenis Kelamin:</label>
+        <div class="radio-group">
+            <input type="radio" name="jenisKelamin" value="Laki-laki" required>
+            <label>Laki-laki</label><br>
+
+            <input type="radio" name="jenisKelamin" value="Perempuan">
+            <label>Perempuan</label>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <a href="/home" class="back">Kembali ke Home</a>
+</div>
 
 </body>
 </html>

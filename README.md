@@ -11,3 +11,5 @@ my hub
 <img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/6fcfca15-5b02-46b0-a3cb-e319d0d6e20f" />
 from input
 <img width="1919" height="980" alt="image" src="https://github.com/user-attachments/assets/1e578ea1-b1ff-4fac-b4c2-6e79023a7b54" />
+input after
+<img width="1919" height="973" alt="image" src="https://github.com/user-attachments/assets/47db1aa9-b5cd-40d7-b1e5-75307bb8277b" />
